@@ -18,6 +18,10 @@ class User extends Authenticatable implements JWTSubject
      *
      * @var array<int, string>
      */
+
+
+    public $limitHitCount = 0;
+    public $limitHitUntil;
     protected $fillable = [
         'name',
         'email',
